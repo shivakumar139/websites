@@ -1,0 +1,59 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	font-family: arial;
+	font-size: 30px;
+
+}
+
+a{
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+	text-decoration: none;
+	display: block;
+	padding:15px 30px;
+	background: white;
+	border:2px solid black;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	overflow: hidden;
+}
+a span{
+	color:#fff;
+	mix-blend-mode: difference;
+	
+}
+a::before{
+	content: "";
+	position:absolute;
+	top:0;
+	left:0;
+	height:100%;
+	width:30%;
+	background: black;
+	transform: skewX(-24deg);
+	transition: all .5s;
+	animation: animate 2s linear infinite;
+
+	
+}
+
+a:hover::before{
+	width:100%;
+	background: black;
+	animation:none;
+	transform: skewX(0deg);
+}
+
+@keyframes animate{
+	0%{
+		left:-30%;
+
+	}
+	100%{
+		left:100%;
+	}
+}
+

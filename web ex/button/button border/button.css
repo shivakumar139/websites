@@ -1,0 +1,117 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: arial;
+	font-size:30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #0c002b;
+	height:100vh;
+}
+a{
+	position: relative;
+	display: inline-block;
+	padding:20px;
+	color:white;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	box-shadow: 0 20px 50px rgba(0,0,0,.5);
+	overflow: hidden;
+}
+a::before{
+	content: "";
+	position: absolute;
+	top:2px;
+	left:2px;
+	height:100%;
+	width:50%;
+	background: rgba(255,255,255,0.05);
+}
+span:nth-child(1){
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:3px;
+	display: block;
+	background: linear-gradient(to right, #0c002b, #1779ff);
+	animation: moveInRight 2s linear infinite;
+	animation-delay: 1s;
+}
+@keyframes moveInRight{
+	0%{
+		transform: translateX(-100%);	
+	}
+	100%{
+		
+		transform: translateX(100%);
+	}
+}
+
+
+span:nth-child(2){
+	position: absolute;
+	top:0;
+	right:0;
+	width:3px;
+	height:100%;
+	display: block;
+	background: linear-gradient(to bottom, #0c002b, #1779ff);
+	animation: moveInBottom 2s linear infinite;
+	}
+@keyframes moveInBottom{
+	0%{
+		
+		transform: translateY(-100%);
+	}
+	100%{
+		
+		transform: translateY(100%);
+	}
+}
+
+span:nth-child(3){
+	position: absolute;
+	right:0;
+	bottom:0;
+	width:100%;
+	height:3px;
+	display: block;
+	background: linear-gradient(to left, #0c002b, #1779ff);
+	animation: moveInLeft 2s linear infinite;
+	animation-delay: 1s;
+}
+@keyframes moveInLeft{
+	0%{
+		
+		transform: translateX(100%);
+	}
+	100%{
+		
+		transform: translateX(-100%);
+	}
+}
+span:nth-child(4){
+	position: absolute;
+	left:0;
+	bottom:0;
+	width:3px;
+	height:100%;
+	display: block;
+	background: linear-gradient(to top, #0c002b, #1779ff);
+	animation: moveInTop 2s linear infinite;
+}
+@keyframes moveInTop{
+	0%{
+		
+		transform: translateY(100%);
+	}
+	100%{
+		
+		transform: translateY(-100%);
+	}
+}

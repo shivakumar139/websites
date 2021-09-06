@@ -1,0 +1,21 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+div{
+	width:100%;
+	height: 60vh;
+	background: linear-gradient(45deg,#ff0057, #8614ce);
+	border-radius:0% 0% 50% 50% / 0% 0% 100% 100%;
+	transform:scaleX(1.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+div h1{
+	color:white;
+	font-size:2rem;
+	text-transform: uppercase;
+	font-family: consolas;
+}

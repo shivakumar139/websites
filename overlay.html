@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		#main{
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 0;
+			height:100%;
+			background-color: rgba(0,0,0,0.5);
+			z-index: 1;
+			overflow-x: hidden;
+			transition: .5s;
+		}
+		#child{
+			position: relative;
+			top:25%;
+			width:100%;
+		}
+		a{
+			display:block;
+			text-decoration: none;
+			font-size: 20px;
+			padding: 20px;
+		}
+	</style>
+	<script type="text/javascript">
+		function open(){
+			document.getElementById("main").style.width = "100%";
+		}
+	</script>
+</head>
+<body>
+<div id=main>
+	<div id="child">
+		<a href="#">HOME</a>
+		<a href="#">HOME</a>
+		<a href="#">HOME</a>
+		<a href="#">HOME</a>
+	</div>
+</div>
+<a href="" onclick="open()">open</a>
+</body>
+</html>

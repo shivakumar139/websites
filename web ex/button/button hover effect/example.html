@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			width: 100%;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #6a11cb;
+			font-family: Arial;
+		}
+
+		button {
+			background-color: #2575fc;
+			color: #ffffff;
+			border: none;
+			outline: none;
+			padding: 15px 40px;
+			border-radius: 100px;
+			position: relative;
+			font-size: 2rem;
+			cursor: pointer;
+		}
+
+		button::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #ffffff;
+			border-radius: 100px;
+			z-index: -1;
+			transition: all .5s;
+		}
+
+		button:hover::after {
+			transform: scaleX(1.4) scaleY(1.6);
+			opacity: 0;
+		}
+	</style>
+</head>
+
+<body>
+	<button type="button">Hover Me</button>
+</body>
+
+</html>

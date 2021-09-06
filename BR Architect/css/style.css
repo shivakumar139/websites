@@ -1,0 +1,290 @@
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}
+a{
+	text-decoration: none;
+	color:black;
+}
+body{
+	font-family: sans-serif;
+}
+.menu{
+	width:100%;
+	height:60px;
+	background: #fff;
+	display:flex;
+	align-items: center;
+	position: fixed;
+	z-index: 1;
+	box-shadow: 10px 5px 10px rgba(0,0,0,.5);
+}
+.menu .logo{
+	width:50%;
+	font-size: 25px;
+	letter-spacing: 5px;
+	text-align: center;
+}
+.menu .logo span{
+	color:black;
+	font-weight: 900;
+	word-spacing: 5px;
+}
+@media(max-width:768px){
+	.menus{
+		display: none;
+
+	}
+	.logo{
+		margin: auto;
+	}
+}
+.menu .menus{
+	width: 50%;
+	
+}
+.menu .menus ul{
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+}
+.menu .menus ul li{
+	display: inline-block;
+	padding-right: 50px;
+	
+}
+.menu .menus ul li a{
+	font-size: 20px;
+}
+.menu .menus ul li a:hover{
+	color:#b9b4b4;
+}
+
+header{
+	width:100%;
+	height: 100vh;
+	background-image:url(../images/architect.jpg);
+	background-size:cover;  
+}
+header .center-text{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color:white;
+	letter-spacing: 5px;
+	font-size: 40px;
+}
+header .center-text span{
+	display: inline-block;
+	font-weight: 700;
+	background: rgba(0,0,0,.8);
+	padding:10px;
+	margin-right: 10px;
+	overflow: hidden;
+}
+
+/*----------------project section----------------------------*/
+main{
+	width: 100%;
+	height: auto;
+	background: white;
+}
+.project-section{
+	margin: 0 30px;
+}
+.heading{
+	margin-top:20px;
+}
+h1{
+	font-size:30px;
+	font-weight: 100;
+}
+hr{
+	background: rgba(0,0,0,.2);
+	width: 100%;
+	height: 1px;
+	margin:20px 0 40px 0;
+}
+
+.row-of-8{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-gap: 20px;
+}
+@media(max-width: 980px){
+	.row-of-8{
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+@media(max-width: 580px){
+	.row-of-8{
+		grid-template-columns: 1fr;
+	}
+}
+@media(max-width: 425px){
+	.row-of-8{
+		grid-template-columns: 1fr;
+	}
+}
+.col{
+	height: 300px;
+	position: relative;
+	background-color: black;
+	transition: .5s;
+}
+.col span{
+	position: relative;
+	display: inline-block;
+	padding: 10px;
+	background: black;
+	color: white;
+}
+.col img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width:100%;
+	height: 100%;
+	background-size: cover;
+}
+
+/*--------------------about section------------------*/
+.about{
+	width:100%;
+	height: auto;
+	background: white;
+}
+.about-section{
+	margin: 0 30px;
+}
+.row-of-4{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-column-gap: 20px;
+	margin-top: 50px;
+}
+@media(min-width:768px){
+	.cols{
+		height: 485px;
+
+	}
+}
+@media(max-width: 980px){
+	.row-of-4{
+		grid-template-columns: 1fr 1fr;
+	}
+}
+@media(max-width: 580px){
+	.row-of-4{
+		grid-template-columns:1fr;
+	}
+}
+.cols{
+	height: 450px;
+	position: relative;
+}
+.cols img{
+	
+	width:100%;
+	height: 50%;
+	background-size: cover;
+}
+.pic-1{
+	width:100%;
+	height: 50%;
+	background: url(../images/man-1.jpg);
+	background-size: cover;
+}
+.pic-2{
+	width:100%;
+	height: 50%;
+	background: url(../images/man-4.jpg);
+	background-size: cover;
+}
+.pic-3{
+	width:100%;
+	height: 50%;
+	background: url(../images/man-1.jpg);
+	background-size: cover;
+}
+.pic-4{
+	width:100%;
+	height: 50%;
+	background: url(../images/man-4.jpg);
+	background-size: cover;
+}
+h3{
+	padding:10px 0;
+}
+.cols h5{
+	padding-bottom:10px;
+	color:grey;
+}
+.cols p{
+	padding-bottom: 10px; 
+}
+.cols a{
+	text-align: center;
+	background: #b9b4b4;
+	display: block;
+	font-size: 20px;
+	padding: 16px 0;
+}
+
+@media(max-width: 1040px){
+	.pix{
+		height: 46%;	
+	}
+}
+.cols a:hover{
+	background: #827c7c;
+}
+
+/*---------------------Contact Section----------------------*/
+.contact-section-parent{
+	width: 100%;
+	height: auto;
+
+}
+.contact-section{
+	margin:30px;
+}
+.text{
+	width:100%;
+	padding: 10px;
+	border:2px solid #00000033;
+	margin: 15px 0;
+}
+.submit{
+	padding:10px;
+	color: white;
+	background-color: black;
+	font-size: 16px;
+	border:none;
+	text-transform: uppercase;
+	margin: 15px 0;
+}
+.contact-section img{
+	width: 100%;
+}
+.text:focus{
+	border:2px solid black;
+}
+
+/*------------footer section-------------*/
+footer{
+	background-color: black;
+	text-align: center;
+	width:100%;
+	height: 80px;
+	color:white;
+}
+footer h5{
+	font-size: 16px;
+	font-weight: 100;
+	line-height: 80px;
+}

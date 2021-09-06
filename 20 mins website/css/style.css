@@ -1,0 +1,119 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: sans-serif;
+	background-color: #f1f3f5;
+}
+header{
+	width: 100%;
+	height: 80vh;
+	background-image: url(../images/team.jpg);
+	background-size: cover;
+}
+header .nav-bar{
+	width: 100%;
+	height: 70px;
+	background-color: #099268;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+header .nav-bar .logo{
+	width:50%;
+	height: 100%;
+}
+header .nav-bar .logo h1{
+	padding: 15px 60px;
+}
+header .nav-bar nav{
+	width: 50%;
+	height: 100%;
+	text-align: center;
+}
+ header .nav-bar nav .login{
+	background-color: #f1f3f5;
+	color:#212529;
+}
+header .nav-bar nav .login:hover{
+	background-color: #076448;
+	color:#f1f3f5;
+}
+header .nav-bar nav a{
+	text-decoration: none;
+	display: inline-block;
+	color:#f1f3f5;
+	padding: 10px 20px;
+	margin: 10px;
+	font-size: 16px;
+	background-color: #076448;
+	border-radius: 5px;
+	text-transform: capitalize;
+}
+header .nav-bar nav a:hover{
+	background-color:#f1f3f5;
+	color:#212529;
+}
+header .main-heading{
+	position: absolute;
+	top:150px;
+	left:40%;
+}
+.main-heading h1{
+	font-size: 50px;
+	text-transform: capitalize;
+	font-weight: 700;
+	color: #212529;
+
+}
+.main-heading button{
+	border:none;
+	background-color: #099268;
+	padding: 10px 20px;
+	color:#f1f3f5;
+	margin-top: 20px;
+	text-transform: capitalize;
+	font-size: 16px;
+	border-radius: 5px;
+	float: right;
+}
+.main-heading button:hover{
+	background-color:#f1f3f5;
+	color:#212529;
+}
+
+section{
+	width:100%;
+	height: auto;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: auto;
+	grid-column-gap: 30px;
+	padding: 0px 60px;
+	margin-top: 50px;
+}
+section .col{
+	background: #ffffff;
+	padding: 20px;
+	border-radius: 3px;
+}
+.col a{
+	text-decoration: none;
+	color:#099268;
+	padding: 15px 30px;
+	text-transform: capitalize;
+	background: #ffffff;
+	border:3px solid #099268;
+	border-radius: 5px;
+	margin-top: 25px;
+	display: inline-block;
+}
+.col a:hover{
+	background-color:#099268;
+	color:#f8f9fa;
+}
+.col p{
+	margin:25px 0;
+}

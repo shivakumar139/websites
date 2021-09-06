@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.box:nth-child(1){
+    background-attachment: fixed;
+    clip-path: circle(1200px at 0 0);
+}

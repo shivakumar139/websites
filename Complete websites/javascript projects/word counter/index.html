@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Counter</title>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- custom stylesheet -->
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>word counter</h1>
+    </header>
+    <section class="editor">
+      <div class="setting"></div>
+
+      <div class="editor-area">
+        <div class="editor-header">
+          <div class="word-count">
+            <h4>word</h4>
+            <span id="word">0</span>
+          </div>
+          <div class="char-count">
+            <h4>character</h4>
+            <span id="char">0</span>
+          </div>
+        </div>
+        <div class="text">
+          <textarea
+            name="text"
+            id="text-input"
+            placeholder="Type or paste your text"
+          ></textarea>
+        </div>
+      </div>
+    </section>
+    <script src="js/script.js"></script>
+  </body>
+</html>
